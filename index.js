@@ -51,5 +51,5 @@ io.on("connection",(socket)=>{
 
 server.listen(port,()=>{
     console.log(`run on the ${port}`);
-})
+},'0.0.0.0');
 
