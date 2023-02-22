@@ -6,7 +6,7 @@ const socketIo = require('socket.io');
 const path = require('path');
 
 const app=express();
-const port = process.env.PORT || 4004;
+const port = 4004 || process.env.port;
 app.use(cors());
 
 app.use(express.static(path.join(__dirname,'public')));
